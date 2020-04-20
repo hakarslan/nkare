@@ -1,0 +1,21 @@
+table {
+  margin:1em auto;
+}
+td {
+  height:60px;
+  width:60px;
+  border:1px solid;
+  text-align:center;
+}
+td:first-child {
+  border-left:solid;
+}
+td:nth-child(1n) {
+  border-right:solid ;
+}
+tr:first-child {
+  border-top:solid;
+}
+tr:nth-child(1n) td {
+  border-bottom:solid ;
+}
