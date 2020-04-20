@@ -20,9 +20,9 @@ $n = 3;
 
 $toplam = $n * $n;
 
-$ilk = $_POST['ilk'];
-$ilkx = $_POST['ilkx'];
-$ilky = $_POST['ilky'];
+$ilk = $_POST['ilk']; if (!isset($ilk)) { $ilk =  1; }
+$ilkx = $_POST['ilkx']; if (!isset($ilkx)) { $ilkx =  2; }
+$ilky = $_POST['ilky']; if (!isset($ilky)) { $ilky =  3; }
 
 $xi = $ilkx;
 $yi = $ilky;
@@ -108,7 +108,7 @@ for ($s = 2;  $s <= $toplam ;) {
 
                                 $karexy = "X".$x."Y".$y;
                                 $deger = array_search ($karexy, $kareler);
-                                echo $deger+1;
+                                echo $deger+$ilk;
 
                                 ?>">
                                 <input type="hidden" id="ilkx" name="ilkx" value="<?php echo $x; ?>">
